@@ -1,6 +1,10 @@
+@font-face {
+    font-family: dogica;
+    src: url("assets/dogica.ttf");
+}
 body {
     background: #dff3ff;
-    font-family: sans-serif;
+    font-family: dogica;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,6 +12,7 @@ body {
 }
 
 .card {
+    position: relative;
     background: #ffff;
     border-radius: 20px;
     padding: 20px;
@@ -16,8 +21,72 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+#bgimage{
+    width:100%
+    border-radius: 15px;
+}
+
+#weatherText{
+    font-size: 8px;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #f3f3f3;
+    border: 2px solid #3d5f7c;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
 img {
     width: 200px;
     margin: 10px;
-    
+}
+
+button {
+    border: none;
+    border-radius: 100px;
+    border: 1px solid #235474;
+    background: #FFF;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.bubble {
+    position: absolute;
+    width: 50px;
+    top: 111px;
+}
+
+.bubbles {
+    position: absolute;
+    width: 50px;
+}
+
+.bubble,
+.bubbles {
+    position: absolute;
+}
+
+.bubble img {
+    width: 100%;
+}
+
+.bubbles img {
+    width: 100%;
+    transform: translate(265%);
+    margin: 50px;
+}
+
+.bubble span {
+    position: absolute;
+    top: 40%;
+    right: 0%;
+}
+
+.bubbles span {
+    position: absolute;
+    top: 45%;
+    left: 385%;
 }
