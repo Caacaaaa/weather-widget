@@ -21,11 +21,6 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-#bgimage{
-    width:100%
-    border-radius: 15px;
-}
-
 #weatherText{
     font-size: 8px;
     white-space: nowrap;
